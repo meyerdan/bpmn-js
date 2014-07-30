@@ -15,7 +15,7 @@ var modelingModule = require('../../../../../lib/features/modeling'),
 
 describe('features/modeling - append shape', function() {
 
-  beforeEach(Matchers.add);
+  beforeEach(Matchers.addDeepEquals);
 
 
   var diagramXML = fs.readFileSync('test/fixtures/bpmn/simple.bpmn', 'utf-8');
